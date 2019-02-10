@@ -22,9 +22,8 @@ app.get('/alumnos/:id', (req,res)=> {
 	res.json(alumno);
 });
 
+//Funcion que obtiene en el post un json con los parametros dados en la url y los mete en el json activo, para despues escribir en el archivo .json
 app.post('/alumnos', (req,res)=> {
-	/*var fs = require('fs');
-    var alumnos = JSON.parse(fs.readFileSync('./alumnos.json', 'utf8'));*/
 	alumnos.push(req.query);
 	fs.writeFileSync("./alumnos.json", JSON.stringify(alumnos));
 	res.json(alumnos);
