@@ -1,0 +1,42 @@
+body
+{
+	background-color: #b2f2cc;
+	color: #000;
+}
+
+button
+{
+	color: #000;
+}
+
+h4
+{
+	color: #000;
+}
+
+.bloqueAlum
+{
+	color: #000;
+	background-color: #696969;
+}
+
+.bloqueAlum li
+{
+	background-color: #696969;
+}
+
+.bloqueAlum button
+{
+	float: right;
+}
+
+input
+{
+	color: #000;
+}
+
+.modele
+{
+	color: #000;
+}
+
