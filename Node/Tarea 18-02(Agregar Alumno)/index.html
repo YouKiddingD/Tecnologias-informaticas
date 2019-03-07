@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web server</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Que tranza mundo?</h1>
+	<form action="/alumnos">
+		<input type="text" placeholder="Nombre" name="nombre" id="nombre">
+		<input type="text" placeholder="Clave" name="clave" id="clave">
+		<input id="agregar" type="button" value="Agregar">
+		<input id="borrar" type="button" value="Borrar">
+	</form>
+</body>
+
+<script>
+	$(document).ready( function(){
+		$("#agregar").on("click",function(e){
+			var alumn = { };
+			alumn.nombre = $("#nombre").val();
+			alumn.clave = $("#clave").val();
+			$.post("http://localhost:3000/alumnos", alumn, function(){alert("Se guardo el alumno");});
+		});
+	});
+</script>
+</html>
+

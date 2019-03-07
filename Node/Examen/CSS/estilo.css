@@ -1,0 +1,23 @@
+body
+{
+	background-color: #e8ebef;
+}
+
+img
+{
+	width: 348px;
+	height: 225px;
+	position: relative;
+	left: 40px;
+}
+
+.res
+{
+	background-color: #f2f4f7;
+}
+
+.barra
+{
+	position: relative;
+	top: 7px;
+}
